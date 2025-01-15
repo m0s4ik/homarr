@@ -213,7 +213,8 @@ export type IntegrationCategory =
   | "torrent"
   | "smartHomeServer"
   | "indexerManager"
-  | "healthMonitoring"
   | "search"
   | "mediaTranscoding"
-  | "networkController";
+  | "networkController"
+  | "healthMonitoring"
+  | "tempNone";
