@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "Wybierz aplikację",
-        "notFound": "Nie znaleziono aplikacji"
-      }
+        "notFound": "Nie znaleziono aplikacji",
+        "search": "",
+        "noResults": "",
+        "action": "",
+        "title": ""
+      },
+      "create": {
+        "title": "",
+        "description": "",
+        "action": ""
+      },
+      "add": ""
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Integracje"
+        },
+        "title": {
+          "label": ""
         },
         "customCssClasses": {
           "label": "Niestandardowe klasy CSS"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Bieżące strumienie serwera multimediów",
       "description": "Pokaż bieżące strumienie na serwerach multimedialnych",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "",
+          "description": ""
+        }
+      },
       "items": {
         "currentlyPlaying": "",
         "user": "Użytkownik",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Pokaż wpisy torrent oznaczone jako ukończone"
+        },
+        "showCompletedHttp": {
+          "label": ""
         },
         "activeTorrentThreshold": {
           "label": "Ukryj ukończony torrent poniżej tego progu (w kiB/s)"
@@ -3786,6 +3807,10 @@
         "description": "",
         "noResults": {
           "title": ""
+        },
+        "invalid": {
+          "title": "",
+          "description": ""
         },
         "expires": ""
       }

@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "App auswählen",
-        "notFound": "Keine App gefunden"
-      }
+        "notFound": "Keine App gefunden",
+        "search": "",
+        "noResults": "",
+        "action": "",
+        "title": ""
+      },
+      "create": {
+        "title": "",
+        "description": "",
+        "action": ""
+      },
+      "add": ""
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Integrationen"
+        },
+        "title": {
+          "label": ""
         },
         "customCssClasses": {
           "label": "Benutzerdefinierte CSS Klassen"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Aktuelle Media Server Streams",
       "description": "Zeige die aktuellen Streams auf deinen Medienservern an",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "",
+          "description": ""
+        }
+      },
       "items": {
         "currentlyPlaying": "Aktuelle Wiedergabe",
         "user": "Benutzer",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Torrent Einträge anzeigen die abgeschlossen wurden"
+        },
+        "showCompletedHttp": {
+          "label": ""
         },
         "activeTorrentThreshold": {
           "label": "Abgeschlossene Torrents unter diesem Schwellenwert ausblenden (in kiB/s)"
@@ -3786,6 +3807,10 @@
         "description": "Wird von Homarr verwendet, um Daten von Integrationen anzufordern.",
         "noResults": {
           "title": "Es gibt noch keine Zertifikate"
+        },
+        "invalid": {
+          "title": "",
+          "description": ""
         },
         "expires": "Gültig bis {when}"
       }

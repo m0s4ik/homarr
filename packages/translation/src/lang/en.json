@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "Select app",
-        "notFound": "No app found"
-      }
+        "notFound": "No app found",
+        "search": "Search for an app",
+        "noResults": "No results",
+        "action": "Select {app}",
+        "title": "Select an app to add to this board"
+      },
+      "create": {
+        "title": "Create new app",
+        "description": "Create a new app ",
+        "action": "Open app creation"
+      },
+      "add": "Add an app"
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Integrations"
+        },
+        "title": {
+          "label": "Title"
         },
         "customCssClasses": {
           "label": "Custom css classes"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Current media server streams",
       "description": "Show the current streams on your media servers",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "Show only currently playing",
+          "description": "Disabling this will not work for plex"
+        }
+      },
       "items": {
         "currentlyPlaying": "Currently playing",
         "user": "User",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Show torrent entries marked as completed"
+        },
+        "showCompletedHttp": {
+          "label": "Show Miscellaneous entries marked as completed"
         },
         "activeTorrentThreshold": {
           "label": "Hide completed torrent under this threshold (in kiB/s)"
@@ -3786,6 +3807,10 @@
         "description": "Used by Homarr to request data from integrations.",
         "noResults": {
           "title": "There are no certificates yet"
+        },
+        "invalid": {
+          "title": "Invalid certificate",
+          "description": "Failed to parse certificate"
         },
         "expires": "Expires {when}"
       }

@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "Выбрать приложение",
-        "notFound": "Приложения не найдены"
-      }
+        "notFound": "Приложения не найдены",
+        "search": "",
+        "noResults": "",
+        "action": "",
+        "title": ""
+      },
+      "create": {
+        "title": "",
+        "description": "",
+        "action": ""
+      },
+      "add": ""
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Интеграции"
+        },
+        "title": {
+          "label": ""
         },
         "customCssClasses": {
           "label": "Пользовательские CSS классы"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Активные просмотры",
       "description": "Отображает текущие сеансы воспроизведения на медиасерверах",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "",
+          "description": ""
+        }
+      },
       "items": {
         "currentlyPlaying": "",
         "user": "Пользователь",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Показывать завершённые торренты"
+        },
+        "showCompletedHttp": {
+          "label": ""
         },
         "activeTorrentThreshold": {
           "label": "Скрывать завершённые торренты ниже этого порога (в КиБ/с)"
@@ -3786,6 +3807,10 @@
         "description": "Используются Homarr для запроса данных из интеграций.",
         "noResults": {
           "title": "Доверенные сертификаты отсутствуют"
+        },
+        "invalid": {
+          "title": "",
+          "description": ""
         },
         "expires": "Истекает {when}"
       }

@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "Velg app",
-        "notFound": "Ingen app funnet"
-      }
+        "notFound": "Ingen app funnet",
+        "search": "",
+        "noResults": "",
+        "action": "",
+        "title": ""
+      },
+      "create": {
+        "title": "",
+        "description": "",
+        "action": ""
+      },
+      "add": ""
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Integrasjoner"
+        },
+        "title": {
+          "label": ""
         },
         "customCssClasses": {
           "label": "Egendefinerte css-klasser"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Pågående medieserver-strømmer",
       "description": "Vis pågående strømmer på dine media-servere",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "",
+          "description": ""
+        }
+      },
       "items": {
         "currentlyPlaying": "Spilles nå",
         "user": "Bruker",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Vis torrentoppføringer markert som fullført"
+        },
+        "showCompletedHttp": {
+          "label": ""
         },
         "activeTorrentThreshold": {
           "label": "Skjul fullført torrent under denne terskelen (i kiB/s)"
@@ -3786,6 +3807,10 @@
         "description": "Brukes av Homarr for å be om data fra integrasjoner.",
         "noResults": {
           "title": "Det er ingen sertifikater enda"
+        },
+        "invalid": {
+          "title": "",
+          "description": ""
         },
         "expires": "Utløper {when}"
       }

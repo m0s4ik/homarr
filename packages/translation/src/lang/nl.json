@@ -611,8 +611,18 @@
     "action": {
       "select": {
         "label": "App selecteren",
-        "notFound": "Geen app gevonden"
-      }
+        "notFound": "Geen app gevonden",
+        "search": "",
+        "noResults": "",
+        "action": "",
+        "title": ""
+      },
+      "create": {
+        "title": "",
+        "description": "",
+        "action": ""
+      },
+      "add": ""
     }
   },
   "integration": {
@@ -1081,6 +1091,9 @@
       "field": {
         "integrations": {
           "label": "Integraties"
+        },
+        "title": {
+          "label": ""
         },
         "customCssClasses": {
           "label": "Aangepaste CSS-classes"
@@ -1756,7 +1769,12 @@
     "mediaServer": {
       "name": "Huidige mediaserver streams",
       "description": "De huidige streams op je mediaservers weergeven",
-      "option": {},
+      "option": {
+        "showOnlyPlaying": {
+          "label": "",
+          "description": ""
+        }
+      },
       "items": {
         "currentlyPlaying": "Momenteel aan het afspelen",
         "user": "Gebruiker",
@@ -1785,6 +1803,9 @@
         },
         "showCompletedTorrent": {
           "label": "Torrentvermeldingen weergeven die zijn gemarkeerd als voltooid"
+        },
+        "showCompletedHttp": {
+          "label": ""
         },
         "activeTorrentThreshold": {
           "label": "Voltooide torrent verbergen onder deze drempel (in kiB/s)"
@@ -3786,6 +3807,10 @@
         "description": "Gebruikt door Homarr om gegevens op te vragen van integraties.",
         "noResults": {
           "title": "Er zijn nog geen certificaten"
+        },
+        "invalid": {
+          "title": "",
+          "description": ""
         },
         "expires": "Verloopt {when}"
       }
